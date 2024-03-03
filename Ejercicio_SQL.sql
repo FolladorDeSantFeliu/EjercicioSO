@@ -1,0 +1,11 @@
+CREATE DATABASE juego;
+USE juego;
+CREATE TABLE jugador (id_j INTEGER, nombre TEXT);
+CREATE TABLE puntos (id_j INTEGER, puntos INTEGER);
+CREATE TABLE partida (id_p INTEGER, id_j INTEGER, puntos_ganador INTEGER);
+INSERT INTO jugador (id_j, nombre) VALUES (1,"AlexCaptain");
+INSERT INTO jugador (id_j, nombre) VALUES (2,"MrSamurott");
+INSERT INTO puntos (id_j, puntos) VALUES (1,55);
+INSERT INTO puntos (id_j, puntos) VALUES (2,69);
+INSERT INTO partida (id_p, id_j, puntos_ganador) VALUES (1,1, 55);
+INSERT INTO partida (id_p, id_j, puntos_ganador) VALUES (2,1, 55);
